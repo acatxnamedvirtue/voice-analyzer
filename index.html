@@ -4,20 +4,10 @@
 		<meta charset="UTF-8">
 		<title>Voice Analyzer</title>
 		<script src="microphone-pitch.js"></script>
-		<script src="index.js"></script>
 	</head>
 	<body>
-		<label>Average Pitch:</label>
-		<div id="pitch"></div>
-		<br/>
-
-		<label>Feedback:</label>
-		<div id="feedback"></div>
-		<br/>
-
-		<label>Status:</label>
-		<div id="status"></div>
-		<br/>
+		<div id="chartContainer" style="height: 700px; width:100%;"></div>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 		<label>Target Pitch:
 			<input type="number" onchange="changeTargetPitch(value)" value="220">
@@ -26,5 +16,6 @@
 		<label>Number of pitch data points to average:
 			<input type="number" onchange="changeNumPitchDataPoints(value)" value="1">
 		</label>
+		<script src="index.js"></script>
 	</body>
 </html>
